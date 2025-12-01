@@ -1,0 +1,7 @@
+streamlit
+pandas
+numpyका डिपेंडेंसी)
+scikit-learn
+seaborn
+matplotlib
+joblib
