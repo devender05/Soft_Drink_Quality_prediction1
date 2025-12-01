@@ -1,6 +1,6 @@
 streamlit
 pandas
-numpyका डिपेंडेंसी)
+numpy
 scikit-learn
 seaborn
 matplotlib
