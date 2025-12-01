@@ -11,7 +11,7 @@ st.title("Will This Product Be Profitable?")
 st.write("Predict if a product/order will make money using your sales data")
 
 # --------------------- Load Model ---------------------
-MODEL_PATH = "profit_model.pkl"
+MODEL_PATH = "model.pkl"
 
 if not os.path.exists(MODEL_PATH):
     st.error("Model not found! Run the training script first.")
@@ -99,4 +99,5 @@ if st.button("Predict Profitability", type="primary"):
         ax.set_ylabel("Units Sold")
         ax.set_title("Product Analysis Scatter Plot")
         plt.colorbar(scatter, label="Prediction")
+
         st.pyplot(fig)
