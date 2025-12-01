@@ -18,7 +18,7 @@ if not os.path.exists(MODEL_PATH):
     st.stop()
 
 import joblib
-with open('profit_model.pkl', 'rb') as f:  
+with open('model.pkl', 'rb') as f:  
     model = joblib.load(f)
 
 st.markdown("---")
@@ -101,3 +101,4 @@ if st.button("Predict Profitability", type="primary"):
         plt.colorbar(scatter, label="Prediction")
 
         st.pyplot(fig)
+
